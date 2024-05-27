@@ -1,0 +1,406 @@
+.header{
+  width: 96%;
+  height: 70px;
+}
+
+/*Logo*/
+.logo{
+  height: 60px;
+  width: fit-content;
+  order: 1;
+}
+/*----------------------*/
+
+
+.rightSideHeader{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 16px;
+  order: 3;
+}
+
+.search{
+  background-color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 35px;
+  padding: 3px 8px 3px 0px;
+  border-radius: 4px;
+}
+
+.searchLargeScreen{
+  display: flex;
+  width: 190px;
+}
+
+.searchSmallScreen{
+  display: none;
+  width: 80%;
+  margin: 0px auto;
+}
+.input{
+  height: 100%;
+  width: 141px;
+  border: none;
+  background-color: #efefef;
+  flex: 1;
+}
+.input:focus{
+  outline: none;
+}
+.searchButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 35px;
+  height: 35px;
+}
+
+.user i{
+  font-size: 30px;
+  cursor: pointer;
+} 
+.login{
+  border-radius: 2px;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 340px;
+  height: 320px;
+  background-color: white;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  text-align: center;
+}
+.login p{
+  color: #848d93;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #848d93;
+}
+
+.bag i{
+  font-size: 25px;
+}
+.bag{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bag .number{
+  position: absolute;
+  top: -1px;
+  right: -7px;
+  color: #fff;
+  font-size: 12px;
+  background-color: black;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.nav{
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  order: 2;
+}
+
+.nav a{
+  font-family: 'futura-REGULAR', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+.navContent{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  height: 100%;
+}
+
+.hasSubmenu{
+  padding: 15px 0;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hasSubmenu i {
+  margin-left: 5px;
+  font-size: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hasSubmenu::before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+.hasSubmenu:hover::before{
+  width: 100%;  
+}
+
+.hasSubmenu:hover .iconDown{
+  transform: rotate(180deg);
+}
+
+.hasSubmenu:hover .menuListSubmain{
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+
+.menuListSubmain{
+  z-index: 1;
+  position: absolute;
+  top: calc(100% + 40px);
+  left: 0px;
+  width: 240px;
+  background-color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.menuListSubmain div{
+  width: 100%;
+  padding: 9px 18px;
+  border-bottom: 1px solid #efefef;
+}
+
+.hasSubsubmenu:hover .iconRight{
+  transform: translateX(7px);
+}
+
+.hasSubsubmenu .menuListSubsubmain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  background: #fff;
+  padding: 0px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.hasSubsubmenu:hover .menuListSubsubmain{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+/*Mobile nav*/
+.menuIcon{
+  height: 100%;
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+.menuIcon i{
+  font-size: 30px;
+}
+.navMobile{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 70px;
+  z-index: 1;
+  background-color: #fff;
+  display: none;
+  overflow-x: hidden;
+}
+.navMobileContent{
+  width: fit-content;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.goBack{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 15px 0px;
+  border-bottom: 1px solid #efefef;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.menuItem{
+  width: 90vw;
+  cursor: pointer;
+  padding: 15px 0px;
+  border-bottom: 1px solid #efefef;
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainMenuItem{
+  font-weight: 700;
+}
+
+.motionLeftToRight{
+  animation: leftToRight 0.5s ease-in-out forwards;
+}
+.motionRightToLeft{
+  animation: rightToLeft 0.5s ease-in-out forwards;
+}
+/*----------------------*/
+.bag::after{
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: -20px;
+  right: 0px;
+  width: 100%;
+  height: 20px;
+}
+.bag:hover .cartContainer{
+  display: flex;
+}
+.cartContainer{
+  z-index: 10;
+  position: absolute;
+  top: 54px;
+  right: -20px;
+  width: 500px;
+  padding: 20px;
+  background-color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.cartContainer span{
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.cartProducts{
+  width: 100%;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0px;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.cartProducts > div:first-child{
+  /* background-color: red; */
+  border-top: none !important;
+}
+.cartIcon i:first-of-type{
+  color: #2e77c3;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.cartIcon span{
+  font-size: 14px;
+}
+
+.cartCost{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+}
+.cartCost span{
+  font-size: 15px;
+}
+.cartCost span:last-of-type{
+  color: #ff1e1e;
+}
+.cartContainer button{
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 1400px){
+  
+}
+@media only screen and (max-width: 1200px){
+  .rightSideHeader{
+    justify-content: flex-end;
+  }
+  
+}
+@media only screen and (max-width: 990px){
+  .searchLargeScreen{
+    display: none;
+  }
+  .searchSmallScreen{
+    display: block;
+  }
+  .nav{
+    order: 1;
+  }
+  .navContent{
+    display: none;
+  }
+  .logo{
+    order: 2;
+  }
+  .menuIcon{
+    display: block;
+  }
+  .navMobile{
+    display: flex;
+  }
+}
+@media only screen and (max-width: 760px){
+  .login{
+    width: 100vw;
+    height: 100vh;
+    right: 0px;
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 500px){
+
+}

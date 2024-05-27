@@ -1,0 +1,112 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  margin: 10px auto;
+  margin-top: 40px;
+}
+.title{
+  /* margin-top: 10px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.titleLogin, .titleRegister{
+  position: relative;
+  font-size: 25px;
+}
+.titleLogin::before{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 120%;
+  top: -1px;
+  right: -16px;
+  background-color: #cccccc;
+}
+.title h1:first-of-type{
+  margin-right: 15px;
+}
+.title h1:last-of-type{
+  margin-left: 15px;
+}
+
+.form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  color: #8b8faf;
+}
+.form label{
+  font-size: 14px;
+  font-weight: 500;
+}
+.email, .password{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 5px;
+}
+.email input, .password input{
+  width: 100%;
+  height: 45px;
+  padding: 5px 20px;
+  background-color: #ededed;
+  border: none;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.sexInput{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.sexInput > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+}
+form > div:last-of-type{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+form > div:last-of-type button{
+  height: 45px;
+  width: 150px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.control{
+  font-weight: 500;
+}
+.control a{
+  text-decoration: none;
+}

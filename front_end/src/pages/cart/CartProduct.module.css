@@ -1,0 +1,162 @@
+.wrapper_mainCart {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: whitesmoke;
+  height: 1000px;
+}
+
+.content_bodyCart {
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.mainCart_detail {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  justify-content: start;
+}
+
+
+.headCart {
+  width: 100%;
+  font-size: 20px;
+  margin: 0;
+  padding: 10px 0;
+  margin-top: 15px;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.list_PageForm_Cart {
+  margin-top: 10px;
+}
+
+.list_Cart {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  height: 500px;
+  padding: 8px 10p;
+}
+
+.item_form {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  border-bottom: 1px solid #eeeded;
+  margin: 15px 15px;
+  padding-bottom: 15px;
+}
+
+.item_left {
+  display: flex;
+  max-width: 80px;
+}
+
+.item_image {
+  display: flex;
+  max-width: 80px;
+}
+
+.item_remove {
+  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.item_detail {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0px;
+  padding-left: 18px;
+  justify-content: space-between;
+}
+
+.item_info {
+  width: 100%;
+}
+
+.item_info h3{
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.item_detail_bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+}
+
+.item_detail_bottom > div:nth-child(3){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item_total {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.quantity_picker {
+  display: inline-block;
+  border:1px solid #dfdfdf;
+  border-radius: 3px;
+  height: fit-content;
+}
+
+.quantity_input:focus {
+  background: red;
+}
+
+.quantity_modifier {
+  height: 25px;
+  width: 25px;
+  font-size: 15px;
+  background: #f3f3f3;
+  color: #888;
+  border: 0 solid #dbdbdb;
+  text-align: center;
+  cursor: pointer;
+}
+.quantity_modifier:hover {
+  background: #dadada;
+  color: #555555;
+}
+
+.quantity_modifier:focus {
+  outline:0;
+}
+
+.quantity_display {
+  width: 40px;
+  font-size: 15px;
+  border: 0;
+  border-top: 0 solid #dbdbdb;
+  border-bottom: 0 solid #dbdbdb;
+  text-align: center;
+}
+
+.total_money {
+  text-align: end;
+}
+
+.total_money span{
+  font-size: large;
+  font-weight: 500;
+}
+

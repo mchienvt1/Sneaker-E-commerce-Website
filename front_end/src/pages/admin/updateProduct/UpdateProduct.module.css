@@ -1,0 +1,319 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+}
+.title{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+
+.middle{
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+.title{
+
+}
+
+
+.addProductInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* background-color: #f9f9f9; */
+  background-color: transparent;
+  
+  padding: 0px;
+  gap: 20px;
+}
+.addProductInfo > div{
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+}
+.generalInfo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+}
+.textInputContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+label{
+  font-size: 15px;
+  font-weight: 500;
+}
+.textInput{
+  width: 100%;
+  background-color: #eeeeee;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.textInput:focus{
+  outline: none;
+}
+
+.sizeContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+}
+.sizeTable {
+  width: 100%;
+}
+
+.sizeInputLabel{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sizeTable th,
+.sizeTable td{
+  background-color: transparent;
+}
+.sizeInput input{
+  width: 50%;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+}
+
+.sizeInput input:focus{
+  outline: none;
+}
+.btnAddSizeContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.btnAddSize{
+  width: 100  px;
+  float: right ;
+}
+
+
+
+/* Image */
+.addProductContainer{
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 20px;
+}
+
+.addProductImage{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+.mainImageContainer{
+  min-height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;;
+}
+
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.subImageContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  overflow-x: scroll;
+  width: 100%;
+}
+.subImage ,.subMainImage{
+  height: 62px;
+  min-width: 62px;
+  /* cursor: pointer; */
+}
+.btnAddImage{
+  height: 62px;
+  min-width: 62px;
+  background-color: transparent;
+  border: 1px dashed black;
+}
+.btnAddImage i{
+  font-size: 25px;
+}
+.mainImageContainer{
+  position: relative;
+  /* border: 1px solid black; */
+}
+.btnDeleteImage{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  background-color: transparent;
+}
+
+.btnDeleteImage i{
+  font-size: 20px;
+}
+.subMainImage{
+  display: flex;
+}
+
+
+
+.inputAddImageContainer{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(238,238,238,0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  padding: 20px;
+  
+}
+.inputAddImageContent{
+  position: relative;
+  background-color: white;
+  gap: 20px;
+  border-radius: 10px;;
+  width: 900px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.inputAddImageContent > label:first-of-type{
+  font-size: 17px;
+  font-weight: 500;
+}
+.inputAddImageRow{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputAddImageRow input:first-child{
+  text-align: center;
+  width: 5%;
+}
+.inputAddImage{
+  text-align: center;
+  width: 75%;
+}
+.inputAddImageRow .imageAction{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: 15%;
+}
+
+/* Button cancel in input image */
+.btnCancelAddImage{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}.btnCancelAddImage i{
+  font-size: 20px;
+}
+
+
+.inputHeader{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputHeader label:first-child{
+  text-align: center;
+  width: 10%;
+}
+.inputHeader label:nth-child(2){
+  text-align: center;
+  width: 80%;
+}
+.inputHeader label:last-child{
+  text-align: center;
+  width: 10%;
+}
+.inputRows{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.inputAddImageContainer input{
+  background-color: #eeeeee;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.inputAddImageAction{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.inputAddImage{
+
+}

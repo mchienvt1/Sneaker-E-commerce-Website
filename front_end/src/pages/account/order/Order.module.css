@@ -1,0 +1,143 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 80%;
+  margin: 20px auto;
+  gap: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.leftSide{
+  background-color: #f6f6f6;
+  width: fit-content;
+  max-width: 200px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.leftSide > i{
+  font-size: 50px;
+}
+.leftSide > div:first-of-type{
+  font-size: 15px;
+  font-weight: 500;
+}
+.leftSide > div:first-of-type span{
+  color: #1451bc;
+  font-size: 16px;
+}
+.leftSide > ul{
+  padding: 0px;
+  
+}
+.leftSide > ul li{
+  list-style: none;
+  margin: 3px 0px;
+  
+  cursor: pointer;
+}
+.leftSide > ul li a:hover{
+  color: #1451bc;
+}
+
+.leftSide > ul li a{
+  display: flex;
+  flex-direction: row;  
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.rightSide{
+  padding: 20px;
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
+.userContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.userContent > ul{
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.userContent > ul li{
+  list-style: none;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+}
+.userContent ul:first-of-type{
+  width: fit-content;
+  padding-right: 20px;
+}
+.userContent ul:first-of-type li{
+  color: #808080;
+}
+.userContent ul:last-of-type{
+  flex:1;
+}
+
+
+@media only screen and (max-width: 1400px){
+
+}
+
+@media only screen and (max-width: 1200px){
+  .container{
+    width: 98%;
+  }
+}
+
+@media only screen and (max-width: 990px){
+  .container{
+    width: 690px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftSide{
+    max-width: none;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 760px){
+  .container{
+    max-width: 510px;
+    flex-direction: column;
+  }
+  /* .rightSide{
+    padding-left: 0px;
+    padding-right: 0px;
+  } */
+  .productName{
+    display: none;
+  }
+  
+}
+@media only screen and (max-width: 500px){
+  .container{
+    width: 100%;;
+    flex-direction: column;
+  }
+  
+}

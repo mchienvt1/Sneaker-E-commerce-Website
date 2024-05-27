@@ -1,0 +1,147 @@
+.container{
+  width: 90%;
+  height: fit-content;
+  border-bottom: 1px solid #e4e7e6;
+  margin: 0px auto;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.parent{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-left: 1px solid #e4e7e6;
+  border-top: 1px solid #e4e7e6;
+  border-right: 1px solid #e4e7e6;
+  height: 70px;
+  width: fit-content;
+}
+.parent > div{
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #e4e7e6;
+  position: relative;
+  min-width: 80px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.parent div:first-of-type{
+  /* background-color: red; */
+  border-left: none;
+}
+.parent a{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  font-family: 'futura-REGULAR', sans-serif;
+  transition: color 0.5s ease-in-out;
+}
+.parent > div:hover a{
+  color: #034ea1;
+}
+.parentActive a::before{
+  content: "";
+  position: absolute;
+  width: 80%;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  background-color: #034ea1;
+}
+
+.parentActive{
+  font-weight: bold;
+}
+.parentActive::before{
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  background-color: white;
+  width: 100%;
+  height: 4px;
+}
+.children{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-left: 1px solid #e4e7e6;
+  border-top: 1px solid #e4e7e6;
+  border-right: 1px solid #e4e7e6;
+}
+.childrenContent{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 0px;
+  width: fit-content;
+}
+.childrenActive{
+  display: flex;
+}
+.childrenContent > div{
+  margin: 0px 10px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.childrenContent > div a:first-of-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background-color: #e4e7e6;
+  border-radius: 50%;
+}
+
+.childrenContent > div a:last-of-type{
+  text-decoration: none;
+  color: black;
+  font-family: 'futura-REGULAR', sans-serif;
+  white-space: nowrap;
+}
+
+.childrenContent img{
+  width: 35px;
+  height: 35px;
+}
+
+
+
+@media only screen and (max-width: 1400px){
+  
+}
+
+@media only screen and (max-width: 1200px){
+  .container{
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 990px){
+  .childrenContent{
+    overflow-x: scroll;
+  }
+  .container{
+    width: 97%;
+  }
+}
+@media only screen and (max-width: 760px){
+
+  
+}
+@media only screen and (max-width: 500px){
+
+}

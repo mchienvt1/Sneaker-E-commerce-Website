@@ -1,0 +1,212 @@
+.infoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+.title{
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.price{
+  color: #e50000;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.status{
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.status strong{
+  color:#4c74b4;
+}
+.sizeContainer {
+  width: 100%;
+}
+.sizeContainer span{
+  font-size: 14px;
+}
+.sizeButtonContainer {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: calc(4 * 70px);
+}
+.sizeButtonContainer button{
+  background-color: transparent;
+  border: 1px solid #e9ecef;
+  width: 70px;
+  height: 30px;
+}
+.sizeButtonContainer .active{
+  background-color: black;
+  color: white;
+}
+.soLuong{
+  margin-top: 20px;
+}
+.soLuong button{
+  width: 43px;
+  height: 43px;
+  background-color: #e9ecef;
+  border: none;
+}
+.soLuong > span{
+  width: 60px;
+  height: 43px;
+  background-color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e9ecef;
+  font-weight: 600;
+}
+
+
+.datMua{
+  position: relative;
+  width: 250px;
+  height: 46px;
+  background-color: #da0020;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border 0.5s ease-in-out;
+  
+}
+.datMuaContainer{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.datMua button{
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 15px;
+  color: white;
+  transition: color 0.5s ease-in-out;
+  letter-spacing: 1px;
+}
+.datMua .colorHover{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.datMua:hover .colorHover{
+  width: 100%;
+  
+}
+.datMua:hover{
+  border: 1px solid black;
+  
+}
+.datMua:hover button{
+  color: black;
+}
+.tuVan{
+  width: 250px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+}
+.tuVan button{
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 15px;
+  color: black;
+  transition: color 0.5s ease-in-out;
+  letter-spacing: 1px;
+}
+.tuVan button span{
+  font-weight: 600;
+  font-size: 15px;
+  color: red;
+  
+}
+
+.policy{
+  margin-top: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 10px;
+  padding: 10px;
+}
+.policy ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0px;
+  gap: 20px;
+}
+.policy li{
+  list-style: none;
+  width: 100%;
+  position: relative;
+  min-height: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5px;
+}
+
+.policy li::after{
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: #e9ecef;
+  bottom: -12px;
+  left: 0px;
+}
+.policy li:last-child::after{
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 1400px){
+
+}
+
+@media only screen and (max-width: 1200px){
+
+}
+
+@media only screen and (max-width: 990px){
+  .infoContainer{
+    width: 100%;
+    padding-left: 0px;
+  }
+}
+@media only screen and (max-width: 760px){
+  
+}
+@media only screen and (max-width: 500px){
+  .datMuaContainer{
+    flex-direction: column;
+    gap: 10px;
+  }
+}

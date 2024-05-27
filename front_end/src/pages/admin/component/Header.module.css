@@ -1,0 +1,33 @@
+.leftSide{
+  width: fit-content;
+  background-color: #f9f9f9;
+  height: 100vh;
+  padding: 10px;
+}
+.leftSide ul{
+  padding-left: 10px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.leftSide li{
+  width: 100%;
+  list-style: none;
+  padding: 10px;
+  margin: 0px;
+  
+  border-radius: 7px;
+  
+}
+.leftSide li a{
+  color: black;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.leftSide .isActive{
+  background-color: #9feea7;
+}

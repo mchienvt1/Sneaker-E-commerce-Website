@@ -1,0 +1,43 @@
+Tài liệu Đặc tả - Lấy Sản phẩm từ File ManageProductType.js
+Mục đích
+Tài liệu này mô tả cách lấy sản phẩm từ các loại khác nhau từ file ManageProductType.js trong dự án.
+
+Hướng dẫn
+1. Import các hằng số cần thiết: Trong các action hoặc reducers của bạn, import các hằng số từ file ManageProductType.js để sử dụng trong việc gửi hành động đến Redux store.
+
+
+import {
+    SET_DANH_SACH_SAN_PHAM,
+    SET_SAN_PHAM_NAM,
+    // Import các hằng số khác nếu cần
+} from 'đường_dẫn_đến_file/ManageProductType';
+
+
+2. Sử dụng các hằng số trong hành động và reducers: Sử dụng các hằng số đã import để dispatch hành động hoặc xử lý trạng thái của Redux store.
+
+Ví dụ: Dispatch hành động để lấy danh sách sản phẩm.
+dispatch({
+    type: SET_SAN_PHAM_NAM,  // để lấy danh sách sản phẩm nam 
+});
+
+Ví dụ: Xử lý trạng thái trong reducers.
+case SET_SAN_PHAM_NAM: {
+    state.arrProduct = state.arrProductDefault.filter(product => product.pgender === "Nam");
+    return { ...state }
+}
+
+3. Sử dụng kết quả trong components React: Trong components React, sử dụng useSelector để lấy danh sách sản phẩm từ Redux store và sử dụng useDispatch để gửi hành động để lấy sản phẩm.
+
+import { useSelector, useDispatch } from 'react-redux';
+
+const { arrProduct } = useSelector(state => state.QuanLySanPhamReducer);
+const dispatch = useDispatch();
+
+
+4. Gọi hành động để lấy sản phẩm khi cần thiết: Trong components React, gọi hành động để lấy sản phẩm khi component được render hoặc khi cần cập nhật danh sách sản phẩm.
+
+
+useEffect(() => {
+  const action = layDanhSachSanPhamAction(); // layDanhSachSanPhamAction là hành động để lấy sản phẩm trong ManageProductAction 
+  dispatch(action); 
+}, [dispatch])

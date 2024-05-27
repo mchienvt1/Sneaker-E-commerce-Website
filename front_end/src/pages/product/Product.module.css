@@ -1,0 +1,40 @@
+.container{
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+
+@media only screen and (max-width: 1400px){
+
+}
+
+@media only screen and (max-width: 1200px){
+  .container{
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 990px){
+  .container{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 690px;
+  }
+}
+@media only screen and (max-width: 760px){
+  .container{
+    width: 510px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .container{
+    width: 100%;
+    padding: 0px 5px;
+  }
+}

@@ -1,0 +1,97 @@
+
+.banner{
+  overflow-x: hidden;
+  position: relative;
+}
+.bannerImages{
+  transition: transform 0.3s ease-in-out;
+}
+.bannerImage{
+  width: 100%;
+}
+.bannerControl{
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 20px;
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  background-color: #928c8c;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+}
+.active{
+  background-color: black;
+}
+.active::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+
+
+/* Grid sysyem */
+.gridContainer{
+  
+  display: grid; 
+  /* grid-template-columns: auto auto auto auto auto; */
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  width: 90%;
+}
+
+.gridItem{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  min-width: 150px;
+  max-width: 620px;
+}
+
+@media only screen and (max-width: 1400px){
+  .gridContainer{
+    /* grid-template-columns: auto auto auto auto auto; */
+    grid-template-columns: repeat(5, 1fr);
+  }
+  
+}
+
+@media only screen and (max-width: 1200px){
+  .gridContainer{
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 990px){
+  .gridContainer{
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: repeat(3, 1fr);
+    width: 97%;
+  }
+}
+@media only screen and (max-width: 760px){
+  .gridContainer{
+    /* grid-template-columns: auto auto; */
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+}
+@media only screen and (max-width: 500px){
+
+}

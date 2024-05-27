@@ -1,0 +1,142 @@
+:root{
+  --footer-color-text: #656565;
+  --footer-color-hover: #1b4ea0;
+}
+*{
+  font-size: 14px;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.footer h4{
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--footer-color-title);
+  padding: 15px 0px 12px 0px;
+  font-family: 'futura-REGULAR', sans-serif;
+  margin: 0px;
+}
+
+.contentFooter{
+  display: flex;
+  flex-direction: column;
+}
+.contentFooter a{
+  text-decoration: none;
+  color: var(--footer-color-text);
+  font-weight: 500;
+  font-family: 'futura-REGULAR', sans-serif;
+  font-size: 14px;
+  padding-bottom: 8px;
+  width: fit-content; 
+  transition: all 0.5s ease-in-out;
+}
+.contentFooter a:hover{
+  color: var(--footer-color-hover);
+}
+
+.copyright {
+  width: 100%;
+  min-height: 76px;
+  height: fit-content;
+  background-color: #dfdfdf;
+  margin: 15px 0px 0px 0px;
+
+}
+.copyrightContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.copyright .registered img{
+  width: 120px;
+  height: 45px;
+}
+.copyright a{
+  text-decoration: none;
+  color: var(--shop-color-text);
+  transition: all 0.5s ease-in-out;
+}
+.copyright a:hover{
+  color: var(--footer-color-hover);
+}
+
+/*Logo*/
+.logo{
+  height: 60px;
+  width: fit-content;
+  order: 1;
+  display: block;
+}
+/*----------------------*/
+
+
+
+@media only screen and (max-width: 1400px){
+  
+}
+@media only screen and (max-width: 1200px){
+  
+  
+}
+@media only screen and (max-width: 990px){
+  .footerContent{
+    flex-direction: column;
+  }
+  .footerContent > div{
+    width: 100%;
+    
+  }
+  .footerContent > div:first-of-type{
+    /*flex-direction: column;*/
+    flex-direction: row;
+  }
+  .footer h4{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--footer-color-title);
+    font-family: 'futura-REGULAR', sans-serif;
+    padding: 0px;
+    margin-top: 10px;
+  }
+
+  .copyrightContent{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .leftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .leftSide > div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .copyrightContent{
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 760px){
+  .footerContent{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px){
+  .copyrightContent{
+    width: 100%;
+  }
+
+}
