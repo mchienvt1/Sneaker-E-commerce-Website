@@ -54,9 +54,12 @@ Mục tiêu chính của dự án này là thiết kế giao diện và phát tr
 * Sử dụng lệnh sau để clone dự án từ Git về máy tính của bạn:
 ```
 git clone https://github.com/mchienvt1/Sneaker-E-commerce-Website.git 
-
 ```
 
 ### Bước 2: Tạo cơ sở dữ liệu
+* 1. Tạo một cơ sở dữ liệu mới với tên "bitis".
+  2. Import tệp bitis.sql có sẵn trong thư mục dự án vào cơ sở dữ liệu vừa tạo.
+
+### Bước 3: Cài đặt Backend
 
 
