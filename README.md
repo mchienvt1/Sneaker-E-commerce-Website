@@ -17,9 +17,9 @@ Mục tiêu chính của dự án này là thiết kế giao diện và phát tr
 ## Functions
 
 ### Client
-* Khuyến mãi và giảm giá: Các chương trình khuyến mãi và giảm giá sản phẩm.
-* Giỏ hàng: Giỏ hàng cho các sản phẩm đã chọn.
-**Đăng nhập và đăng ký**: Quy trình đăng nhập và đăng ký tài khoản.
+* Khuyến mãi và giảm giá - Các chương trình khuyến mãi và giảm giá sản phẩm.
+* Giỏ hàng - Giỏ hàng cho các sản phẩm đã chọn.
+*Đăng nhập và đăng ký*: Quy trình đăng nhập và đăng ký tài khoản.
 **Quản lý tài khoản**: Quản lý thông tin cá nhân và tài khoản.
 **Thanh toán**: Phương thức thanh toán khi nhận hàng.
 **Đánh giá sản phẩm**: Chức năng đánh giá và nhận xét về sản phẩm.
