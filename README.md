@@ -51,10 +51,12 @@ Mục tiêu chính của dự án này là thiết kế giao diện và phát tr
 ### Project Launch Guide
 
 #### Bước 1: Clone dự án về máy
-    Sử dụng lệnh sau để clone dự án từ Git về máy tính của bạn:
+* Sử dụng lệnh sau để clone dự án từ Git về máy tính của bạn:
 ```
 git clone https://github.com/mchienvt1/Sneaker-E-commerce-Website.git 
+
 ```
+
 #### Bước 2: Tạo cơ sở dữ liệu
 
 
