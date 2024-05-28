@@ -57,9 +57,25 @@ git clone https://github.com/mchienvt1/Sneaker-E-commerce-Website.git
 ```
 
 ### Bước 2: Tạo cơ sở dữ liệu
-* 1. Tạo một cơ sở dữ liệu mới với tên "bitis".
-  2. Import tệp bitis.sql có sẵn trong thư mục dự án vào cơ sở dữ liệu vừa tạo.
+* Tạo một cơ sở dữ liệu mới với tên "bitis".
+* Import tệp bitis.sql có sẵn trong thư mục dự án vào cơ sở dữ liệu vừa tạo.
 
 ### Bước 3: Cài đặt Backend
+* Copy thư mục 'backend' và dán vào thư mục 'htdocs' của XAMPP.
+* Đổi tên thư mục 'backend' thành 'BE'.
+
+### Bước 4: Cài đặt và khởi chạy Frontend
+* Mở terminal và điều hướng đến thư mục 'frontend'.
+* Chạy lệnh sau để cài đặt các gói cần thiết:
+```
+npm install
+```
+* Sau khi cài đặt xong, tiếp tục chạy lệnh sau để khởi chạy dự án:
+```
+npm start
+```
+Sau khi tuân thủ các bước khởi chạy, bạn có thể truy cập vào ứng dụng thông qua trình duyệt web của bạn và bắt đầu sử dụng.
+
+
 
 
